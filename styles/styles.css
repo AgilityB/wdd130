@@ -1,5 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+}
+:root {
+    --background-color:darkblue;
+    --border-color: black;  
+} 
+
 nav {
-    background-color: darkblue;
+    background-color: var(--background-color);
     padding: 10px;
 }
 
@@ -10,19 +25,24 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--background-color);
+    padding-left: 1rem;
+
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    /* you most likely will have other CSS declarations here */
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
 main {
@@ -31,12 +51,8 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0 0 0/ 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 
@@ -45,8 +61,29 @@ aside img {
     height: auto;
 }
 
+h2 {
+    position: absolute;
+    top: 10px;
+    left: 140px;
+}
+
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0 0 0/ 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
+
+.indent {
+    padding-left: 2rem;
 }
