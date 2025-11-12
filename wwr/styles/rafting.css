@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+nav a {
+    display: block;
+    padding: 5px;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -57,14 +62,14 @@ nav, p, section, article {
     top: 20px;
     width: 100%;
     padding: 1rem   ;
-    background-color: rgba(245, 222, 179, 0.5);
+    background-color: var(--accent2-color);
 }
 
 .hero article {
     position: absolute;
     bottom: 5px;
     padding: .05rem;
-    background-color:rgba(245, 222, 179, 0.5);
+    background-color: var(--accent2-color);
 }
 
 .hero article img {
