@@ -4,10 +4,26 @@
   box-sizing: border-box;
 }
 
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
 body {
     font-size: 16px;
     font-family: roboto, Arial, Helvetica, sans-serif;
 }
+
 :root {
     --background-color:darkblue;
     --border-color: black;  
@@ -15,19 +31,26 @@ body {
 
 nav {
     background-color: var(--background-color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
 }
 
 nav a {
-    color: white;
+    color: white; /* recall also #fff is shorthand for white */
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--background-color);
     padding-left: 1rem;
-
+    border-bottom: dimgrey;
 }
 
 main img {
@@ -45,14 +68,13 @@ p {
     padding: 1rem;
 }
 
-main {
-    max-width: 840px;
-}
 
 aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 
