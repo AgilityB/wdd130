@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <meta name="author" content="Nwakwuruibe Bright">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+
+<header>
+    <h1>WDD 130 | HTML Form - User Poll</h1>
+</header>
+
+<body>
+    <main>
+        <form action="/submit-page" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <dt>
+                    <div class="form-item column2">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                </dt>
+                <dt>
+                    <div class="form-item column2">
+                        <label for="email">Email:</label>
+                        <input type="email" id="useremail" name="useremail" required>
+                    </div>
+                </dt>
+
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <dt>
+                    <div class="form-item column1">
+                        <label for="browser">What is your favorite internet browser?</label>
+                        <select name="browser" id="browser">
+                            <option value="1">Safari</option>
+                            <option value="2">Chrome</option>
+                            <option value="3">Brave</option>
+                            <option value="4">Edge</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </div>
+                </dt>
+                <dt>
+                    <div class="form-item column1">
+                        <label for="pet">Do you have a household pet?</label>
+                        <input type="checkbox" id="pet" name="pet">
+                    </div>
+                </dt>
+
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4"
+                    placeholder="Lagos, Nigeria Amsterdam, Netherlands"></textarea>
+            </fieldset>
+            <div class="container">
+                <button type="submit">Submit Poll</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+<footer>
+    <p>©2025 | HTML Form - User Poll Activity | Nwakwuruibe Bright</p>
+</footer>
+
+</html>
